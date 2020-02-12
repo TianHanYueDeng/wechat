@@ -21,8 +21,6 @@ github.com/mattn/go-isatty v0.0.0-20161123143637-30a891c33c7c h1:YHHK/dEmr2Jo1cW
 github.com/mattn/go-isatty v0.0.0-20161123143637-30a891c33c7c/go.mod h1:M+lRXTBqGeGNdLjl/ufCoiOlB5xdOkqRJdNxMWT7Zi4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
-github.com/silenceper/wechat v2.0.1+incompatible h1:OTUMcKxD9fdu+O0asjcRWdJG7W0yosh/BrhHoE/oiv8=
-github.com/silenceper/wechat v2.0.1+incompatible/go.mod h1:JKAk3URsmQk11QCP/n3xq71Z5XdtCaLI61zRNbhFdVk=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.4.0 h1:2E4SXV/wtOkTonXsotYi4li6zVWxYlZuYNCXe9XRJyk=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
