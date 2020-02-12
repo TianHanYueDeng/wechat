@@ -178,7 +178,7 @@ func (srv *Server) buildResponse(replies []*message.Reply) (err error) {
 	}
 	srv.responseMsg = make([]interface{}, 5)
 	srv.responseRawXMLMsg = make([][]byte, 5)
-	for _, reply := range replies {
+	for i, reply := range replies {
 		msgType := reply.MsgType
 		switch msgType {
 		case message.MsgTypeText:
@@ -213,12 +213,12 @@ func (srv *Server) buildResponse(replies []*message.Reply) (err error) {
 
 		params[0] = reflect.ValueOf(util.GetCurrTs())
 		value.MethodByName("SetCreateTime").Call(params)
-		srv.responseMsg = append(srv.responseMsg, msg)
+		srv.responseMsg[i] = msg
 		XmlMsg, err := xml.Marshal(msg)
 		if err != nil {
 			return err
 		}
-		srv.responseRawXMLMsg = append(srv.responseRawXMLMsg, XmlMsg)
+		srv.responseRawXMLMsg[i] = XmlMsg
 	}
 	return nil
 }
