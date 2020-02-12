@@ -179,6 +179,9 @@ func (srv *Server) buildResponse(replies []*message.Reply) (err error) {
 	srv.responseMsg = make([]interface{}, 5)
 	srv.responseRawXMLMsg = make([][]byte, 5)
 	for i, reply := range replies {
+		if reply == nil {
+			break
+		}
 		msgType := reply.MsgType
 		switch msgType {
 		case message.MsgTypeText:
