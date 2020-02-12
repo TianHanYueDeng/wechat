@@ -4,6 +4,8 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
+	"github.com/TianHanYueDeng/wechat/message"
+	"github.com/TianHanYueDeng/wechat/util"
 	"io/ioutil"
 	"reflect"
 	"runtime/debug"
